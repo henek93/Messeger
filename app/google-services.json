@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "587903749727",
+    "project_id": "messenger-kotlin-1881c",
+    "storage_bucket": "messenger-kotlin-1881c.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:587903749727:android:0ea09049d2ea45f9d895ea",
+        "android_client_info": {
+          "package_name": "com.example.messegerkotlin"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDW1e-TDVy3l6DIm2EShLtB_XqeiMHY7e4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

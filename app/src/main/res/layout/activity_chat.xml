@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/sunny_background"
+    tools:context=".activities.ChatActivity">
+
+    <TextView
+        android:id="@+id/textViewTitleChat"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent"
+        android:textSize="18sp"
+        android:padding="16dp"
+        tools:text="John Smit"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:background="#272626" />
+
+    <View
+        android:id="@+id/viewOnlineChat"
+        android:layout_width="12dp"
+        android:layout_height="12dp"
+        android:layout_margin="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="@id/textViewTitleChat"
+        app:layout_constraintTop_toTopOf="@id/textViewTitleChat"
+        android:background="@drawable/circle_green"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recycklerViewMesseges"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintTop_toBottomOf="@id/textViewTitleChat"
+        app:layout_constraintBottom_toTopOf="@id/editTextMessege"
+        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+        tools:listitem="@layout/my_messege_item"/>
+
+    <EditText
+        android:id="@+id/editTextMessege"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/backgroung_editMesseges"
+        android:hint="@string/type_messege"
+        android:inputType="textMultiLine"
+        android:paddingTop="16dp"
+        android:paddingBottom="16dp"
+        android:paddingStart="16dp"
+        android:paddingEnd="48dp"
+        app:layout_constraintBottom_toBottomOf="parent"/>
+
+    <ImageView
+        android:id="@+id/imageViewSendMessege"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        app:layout_constraintBottom_toBottomOf="@+id/editTextMessege"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@id/editTextMessege"
+        app:srcCompat="@android:drawable/ic_menu_send"
+        app:tint="@color/background_tint_send_image" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

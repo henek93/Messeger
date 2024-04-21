@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">MessegerKotlin</string>
+    <string name="enter_email">Введите логин</string>
+    <string name="messenger">Messenger</string>
+    <string name="enter_password">Введите пароль</string>
+    <string name="login">Войти</string>
+    <string name="registration">Регистрация</string>
+    <string name="enter_name">Введите имя</string>
+    <string name="enter_last_name">Введите фамилию</string>
+    <string name="enter_age">Введите возраст</string>
+    <string name="registrait">Зарегистрироваться</string>
+    <string name="re_password">Восстонавление пароля</string>
+    <string name="eset_password">Востановить пароль</string>
+    <string name="chats">Чаты и сообщения</string>
+    <string name="logout">Выйти</string>
+    <string name="forgot_password">Забыли пароль?</string>
+    <string name="registrate">Зарегистрироваться</string>
+    <string name="type_messege">Введите сообщение</string>
+</resources>
